@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    height: 100vh;
+    background-image: url('background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    max-width: 430px;
+    width: 90%;  /* Use percentage width for responsiveness */
+    height: auto;
+    padding: 30px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    border: 3px solid white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text h2 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 2rem;  /* Adjusted for responsiveness */
+    color: white;
+    font-weight: bold;
+}
+
+.input {
+    height: 50px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.input input {
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    font-size: 1rem;
+    color: white;
+}
+
+.input input::placeholder {
+    color: white;
+}
+
+#active {
+    color: white;
+    font-size: 1rem;
+}
+
+.radio {
+    padding-left: 10px;
+}
+
+#link {
+    float: right;
+    margin-left: 40px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#link:hover {
+    border-bottom: 1px solid white;
+}
+
+.btn {
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btn button {
+    height: 100%;
+    width: 100%;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 6px;
+    border: 2px solid transparent;
+}
+
+.btn button:hover {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.last {
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.last h2 {
+    font-size: 1.2rem;
+}
+
+.last a {
+    text-decoration: none;
+    color: white;
+}
+
+.last a:hover {
+    border-bottom: 1px solid white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .text h2 {
+        font-size: 1.8rem;
+    }
+
+    .input input {
+        font-size: 1rem;
+    }
+
+    .btn button {
+        font-size: 1.1rem;
+    }
+
+    .last h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .text h2 {
+        font-size: 1.5rem;
+    }
+
+    .input input {
+        font-size: 0.9rem;
+    }
+
+    .btn button {
+        font-size: 1rem;
+    }
+
+    .last h2 {
+        font-size: 0.9rem;
+    }
+}
